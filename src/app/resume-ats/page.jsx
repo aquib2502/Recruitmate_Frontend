@@ -1,4 +1,5 @@
-import ResumeATSPage from '@/components/ResumeATS/ResumeAtsPage'
+
+import ResumeATSPage from '@/components/ResumeATSPage/ResumeATSPage'
 import React from 'react'
 
 const page = () => {
