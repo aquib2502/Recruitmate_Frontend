@@ -210,7 +210,7 @@ const Navbar = () => {
               ) : (
                 <div className="px-2">
                   <button
-                    onClick={handleLogin}
+                    onClick={handleLoginClick}
                     className="w-full bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-violet-500/30"
                   >
                     Login

@@ -13,10 +13,13 @@ import {
   FaQuoteLeft
 } from 'react-icons/fa';
 import Navbar from '../Layout/Navbar/Navbar';
+import { useRouter } from 'next/navigation';
 
 const AboutUs = () => {
   const [isVisible, setIsVisible] = useState({});
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const router = useRouter()
 
   useEffect(() => {
     // Animate sections on scroll
@@ -141,7 +144,9 @@ const AboutUs = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="group px-8 py-4 bg-gradient-to-r from-violet-500 to-purple-600 rounded-xl font-semibold hover:shadow-2xl hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105">
+              <button 
+              onClick={()=> router.push('/')}
+              className="group px-8 py-4 bg-gradient-to-r from-violet-500 to-purple-600 rounded-xl font-semibold hover:shadow-2xl hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105">
                 <span className="flex items-center justify-center">
                   Get Started
                   <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
